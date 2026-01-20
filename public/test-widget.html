@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kate Widget Test</title>
+    <!-- We bundle CSS in the UMD usually, but if style.css is separate, we link it here -->
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f2f5;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Kate Widget Sanity Test</h1>
+        <p>If the widget is working, you should see the chat bubble in the bottom right corner.</p>
+        <p>Domain: <code>widget.conquer365.com</code></p>
+    </div>
+
+    <!-- The Kate Widget Script -->
+    <script 
+      src="/kate-widget.umd.js" 
+      data-agent-id="00000000-0000-0000-0000-000000000001"
+    ></script>
+</body>
+</html>
