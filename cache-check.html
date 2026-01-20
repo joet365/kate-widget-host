@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Widget Cache Check</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f0f2f5;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="text-align:center;">
+        <h1>Cache Check</h1>
+        <p>This page forces a fresh load of the widget script.</p>
+    </div>
+    <script src="/kate-widget.umd.js?v=cachebust_fixed_build_v2"
+        data-agent-id="00000000-0000-0000-0000-000000000001"></script>
+</body>
+
+</html>
